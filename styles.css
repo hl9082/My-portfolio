@@ -1,8 +1,21 @@
-body {
-    font-family: Arial, sans-serif;
+/* Ensure the body and html take full height */
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+}
+
+/* Use flexbox for the container to ensure the footer is at the bottom */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* The main content should take all the remaining space */
+main {
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
 }
 
 header {
@@ -29,23 +42,19 @@ nav ul li a {
 
 section {
     padding: 20px;
-    margin: 20px;
+    margin: 20px 0;
 }
 
-.experience {
+.experience, .project {
     margin-bottom: 20px;
 }
 
-.experience h3 {
+.experience h3, .project h3 {
     margin: 0;
 }
 
-.experience p {
+.experience p, .project p {
     margin: 5px 0;
-}
-
-.project {
-    margin-bottom: 20px;
 }
 
 .project a {
@@ -64,7 +73,16 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    /* Ensure footer is placed at the bottom */
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
