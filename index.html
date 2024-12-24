@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huy Le - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Huy. I'm an undergraduate in Computer Science major.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Here’s a bit more about me...</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project 1">
+            <h3>Attendance tracking program</h3>
+            <p>The program to track attendance of students with biometrics by JavaScript, API framework, CSS, and neo4js.</p>
+            <a href="https://github.com/hl9082/Attendance-tracker">View Project</a>
+        </div>
+        <!-- Repeat for more projects -->
+        <div class="project 2">
+            <h3>Symbol table</h3>
+            <p>Simulated the instructions in the symbol table with the C programming language.</p>
+            <a href="https://github.com/hl9082/CS243-projects/tree/main/Projects/project2">View Project</a>
+        </div>
+        <div class="project 3">
+            <h3>Astro/Hoppers</h3>
+            <p>Built a game consisting of 2 parts: Astro and Hoppers, by means of Java, JavaFX. In these games, the characters move
+                around the screen and the games end when the target destinations are reached.</p>
+            <a href="https://github.com/hl9082/RIT-CSCI141-and-CSCI-142-projects/tree/main/project-2-2-astro-hoppers-2-keep-it-simple-master">View Project</a>
+        </div>
+        <div class="project 4">
+            <h3>Text Statistics</h3>
+            <p>Utilized Python to produce statistics from given text data.</p>
+            <a href="https://github.com/hl9082/RIT-CSCI141-and-CSCI-142-projects/tree/main/Word%20statistic">View Project</a>
+        </div>
+        <div class="project 5">
+            <h3>Program to detect misinformation</h3>
+            <p>Harnessed C++ to write lines of code to discern false information based on the Singaporean Tipsheet during Covid-19.</p>
+            <a href="https://github.com/hl9082/Misinformation-detector">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: hl9082@rit.edu</p>
+        <p>Email: legiahuy050104@gmail.com</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="experience">
+            <h3>Web Developer Intern at Platihub (remote)</h3>
+            <p>June 2024 - August 2024</p>
+            <p>Responsibilities:</p>
+            <ul>
+                <li>Harnessed React.js to efficiently fill out user information, improving data accuracy and user experience.</li>
+                <li>Connected to servers using HTML and CSS, enhancing website functionality and ensuring seamless data retrieval.</li>
+                <li>Generated email aliases using JSON and JavaScript, streamlining communication processes and improving team
+                    collaboration.</li>
+                <li>Secured APIs using Spring Boot Java, enhancing application security and protecting sensitive data.</li>
+            </ul>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Huy Le. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
